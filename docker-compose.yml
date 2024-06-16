@@ -37,9 +37,9 @@ services:
     container_name: Devolio
 
     # Pull latest image from DockerHub
-    # image: lissy93/devolio
+    # image: cotonrey/devolio
 
-    # To build from source, replace 'image: lissy93/devolio' with 'build: .'
+    # To build from source, replace 'image: cotonrey/devolio' with 'build: .'
     build: .
 
     # Set port that web service will be served on. Keep container port as 80

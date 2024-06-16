@@ -15,7 +15,7 @@
     {
       label: 'PGP',
       value: 'FEDB 68F5 5C02 83A7',
-      link: 'https://keybase.io/aliciasykes/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
+      link: 'https://keybase.io/cotonrey/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
     },
     {
       label: 'Email',

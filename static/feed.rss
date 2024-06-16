@@ -65,7 +65,7 @@
 
 &lt;p&gt;Here's a live demo: &lt;strong&gt;&lt;a href="https://devolio.netlify.app/blog" rel="noopener nofollow" target="_blank"&gt;devolio.netlify.app/blog&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;And here's the full source: &lt;strong&gt;&lt;a href="https://github.com/Lissy93/devolio" rel="noopener nofollow" target="_blank"&gt;@Lissy93/Devolio&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And here's the full source: &lt;strong&gt;&lt;a href="https://github.com/cotonrey/devolio" rel="noopener nofollow" target="_blank"&gt;@cotonrey/Devolio&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To deploy it yourself - just fork it, update the config with your RSS feed URL(s), and use one of the 1-click deploy options.&lt;/p&gt;
 
@@ -446,23 +446,23 @@ Blog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;(don't forget to npm i any adapters before using!)&lt;/p&gt;
 
-&lt;p&gt;Finally, let's talk about Docker. As it's a popular deployment method, here's a multi-arch &lt;strong&gt;&lt;a href="https://github.com/Lissy93/devolio/blob/master/Dockerfile" rel="noopener nofollow" target="_blank"&gt;Dockerfile&lt;/a&gt;&lt;/strong&gt; I've written, with a build stage, deploy stage, and some healthchecks.&lt;/p&gt;
+&lt;p&gt;Finally, let's talk about Docker. As it's a popular deployment method, here's a multi-arch &lt;strong&gt;&lt;a href="https://github.com/cotonrey/devolio/blob/master/Dockerfile" rel="noopener nofollow" target="_blank"&gt;Dockerfile&lt;/a&gt;&lt;/strong&gt; I've written, with a build stage, deploy stage, and some healthchecks.&lt;/p&gt;
 
-&lt;p&gt;It's also published to DockerHub (under &lt;a href="https://hub.docker.com/r/lissy93/devolio" rel="noopener nofollow" target="_blank"&gt;lissy93/devolio&lt;/a&gt;), so you should be able to use it with &lt;code class="prettyprint"&gt;docker run -p 3000:80 lissy93/devolio&lt;/code&gt; - or use the &lt;a href="https://github.com/Lissy93/devolio/blob/master/docker-compose.yml" rel="noopener nofollow" target="_blank"&gt;docker-compose.yml&lt;/a&gt; as an template for your own container.&lt;/p&gt;
+&lt;p&gt;It's also published to DockerHub (under &lt;a href="https://hub.docker.com/r/cotonrey/devolio" rel="noopener nofollow" target="_blank"&gt;cotonrey/devolio&lt;/a&gt;), so you should be able to use it with &lt;code class="prettyprint"&gt;docker run -p 3000:80 cotonrey/devolio&lt;/code&gt; - or use the &lt;a href="https://github.com/cotonrey/devolio/blob/master/docker-compose.yml" rel="noopener nofollow" target="_blank"&gt;docker-compose.yml&lt;/a&gt; as an template for your own container.&lt;/p&gt;
 
 &lt;hr&gt;
 
 &lt;h2&gt;The Project&lt;/h2&gt;
 
-&lt;p&gt;I've had to skip over a few details for the sake of brevity, but all &lt;a href="https://github.com/Lissy93/devolio" rel="noopener nofollow" target="_blank"&gt;the code is available on GitHub&lt;/a&gt;, so that should clear up anything that doesn't yet make sense - if it's still not, feel free to ask below :)&lt;/p&gt;
+&lt;p&gt;I've had to skip over a few details for the sake of brevity, but all &lt;a href="https://github.com/cotonrey/devolio" rel="noopener nofollow" target="_blank"&gt;the code is available on GitHub&lt;/a&gt;, so that should clear up anything that doesn't yet make sense - if it's still not, feel free to ask below :)&lt;/p&gt;
 
 &lt;p&gt;There's a few extra features that I also added:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Extracted all data into a config file, for easy usage, and made it stylable with custom colors and themes&lt;/li&gt;
-&lt;li&gt;I used a store to keep track of posts (in &lt;a href="https://github.com/Lissy93/devolio/blob/master/src/store/BlogStore.ts" rel="noopener nofollow" target="_blank"&gt;BlogStore.ts&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;I used a store to keep track of posts (in &lt;a href="https://github.com/cotonrey/devolio/blob/master/src/store/BlogStore.ts" rel="noopener nofollow" target="_blank"&gt;BlogStore.ts&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Added functionality for loading and combining multiple RSS feeds, as well as sorting and filtering results&lt;/li&gt;
-&lt;li&gt;Added internationalization functionality (in &lt;a href="https://github.com/Lissy93/devolio/blob/master/src/store/Language.ts" rel="noopener nofollow" target="_blank"&gt;Language.ts&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added internationalization functionality (in &lt;a href="https://github.com/cotonrey/devolio/blob/master/src/store/Language.ts" rel="noopener nofollow" target="_blank"&gt;Language.ts&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;I built a page to showcase your projects, with data fetched from your GitHub, via their API&lt;/li&gt;
 &lt;li&gt;And a contact page, with an email form, social media links and GPG keys&lt;/li&gt;
 &lt;li&gt;Added more adapters for deploying to various cloud services, and wrote a Dockerfile&lt;/li&gt;
@@ -484,7 +484,7 @@ Blog
 
 &lt;p&gt;I do plan on expanding the project, add some features and make it into an easily configurable, themeable developer portfolio website, that anyone can easily use. If you'd like to see the updates, drop the repo a star on GitHub :)&lt;/p&gt;
 
-&lt;p&gt;And if you'd like to contribute to the source, it's &lt;a href="https://github.com/Lissy93/devolio" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt; (&lt;code class="prettyprint"&gt;MIT&lt;/code&gt;) on GitHub, and I'll drop you a mention in the credits if you're able to submit a PR!&lt;/p&gt;
+&lt;p&gt;And if you'd like to contribute to the source, it's &lt;a href="https://github.com/cotonrey/devolio" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt; (&lt;code class="prettyprint"&gt;MIT&lt;/code&gt;) on GitHub, and I'll drop you a mention in the credits if you're able to submit a PR!&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -493,7 +493,7 @@ Blog
 &lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;small&gt;If you like this kind of stuff&lt;/small&gt;,&lt;br&gt;&lt;small&gt;consider following for more :)&lt;/small&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://github.com/Lissy93"&gt;&lt;img src="https://img.shields.io/badge/-Lissy93-3a3a3a?style=flat&amp;amp;logo=GitHub&amp;amp;logoColor=white" alt="Follow Lissy93 on GitHub"&gt;&lt;/a&gt;&lt;a href="https://twitter.com/Lissy_Sykes"&gt;&lt;img src="https://img.shields.io/badge/-@Lissy_Sykes-00acee?style=flat&amp;amp;logo=Twitter&amp;amp;logoColor=white" alt="Follow Lissy_Sykes on Twitter"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://github.com/cotonrey"&gt;&lt;img src="https://img.shields.io/badge/-cotonrey-3a3a3a?style=flat&amp;amp;logo=GitHub&amp;amp;logoColor=white" alt="Follow cotonrey on GitHub"&gt;&lt;/a&gt;&lt;a href="https://twitter.com/Lissy_Sykes"&gt;&lt;img src="https://img.shields.io/badge/-@Lissy_Sykes-00acee?style=flat&amp;amp;logo=Twitter&amp;amp;logoColor=white" alt="Follow Lissy_Sykes on Twitter"&gt;&lt;/a&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;&lt;tbody&gt;
 &lt;/tbody&gt;&lt;/table&gt;
@@ -1419,7 +1419,7 @@ sudo apt install just
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code class="prettyprint"&gt;transfer&lt;/code&gt; makes uploading and sharing files really easy, directly from the command line. It's free, supports encryption, gives you a unique URL, and can also be self-hosted.&lt;br&gt;
-I've written a Bash helper function to make usage a bit easier, you can &lt;a href="https://github.com/Lissy93/dotfiles/blob/master/utils/transfer.sh" rel="noopener nofollow" target="_blank"&gt;find it here&lt;/a&gt; or try it out by running &lt;code class="prettyprint"&gt;bash &amp;lt;(curl -L -s https://cotonrey.url.lol/transfer)&lt;/code&gt;&lt;/p&gt;
+I've written a Bash helper function to make usage a bit easier, you can &lt;a href="https://github.com/cotonrey/dotfiles/blob/master/utils/transfer.sh" rel="noopener nofollow" target="_blank"&gt;find it here&lt;/a&gt; or try it out by running &lt;code class="prettyprint"&gt;bash &amp;lt;(curl -L -s https://cotonrey.url.lol/transfer)&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src="https://i.ibb.co/cCqDb1k/transfer-sh.png" alt="transfer-sh-example-usage"&gt;&lt;/p&gt;
@@ -1500,7 +1500,7 @@ I've written a Bash helper function to make usage a bit easier, you can &lt;a hr
 
 &lt;p&gt;&lt;a href="https://github.com/dylanaraps/neofetch"&gt;&lt;img src="https://img.shields.io/github/stars/dylanaraps/neofetch?color=232323&amp;amp;label=neofetch&amp;amp;logo=github&amp;amp;labelColor=232323" alt="View neofetch on GitHub"&gt;&lt;/a&gt;&lt;a href="https://github.com/dylanaraps"&gt;&lt;img src="https://img.shields.io/badge/dylanaraps-b820f9?labelColor=b820f9&amp;amp;logo=githubsponsors&amp;amp;logoColor=fff" alt="Author dylanaraps"&gt;&lt;/a&gt; &lt;img src="https://img.shields.io/static/v1?label=&amp;amp;message=Bash&amp;amp;color=green&amp;amp;logo=gnubash&amp;amp;logoColor=FFFFFF" alt="Written in Bash"&gt;&lt;/p&gt;
 
-&lt;p&gt;As an example, I'm using &lt;code class="prettyprint"&gt;cowsay&lt;/code&gt;, &lt;code class="prettyprint"&gt;figlet&lt;/code&gt;, &lt;code class="prettyprint"&gt;lolcat&lt;/code&gt; and &lt;code class="prettyprint"&gt;neofetch&lt;/code&gt; to create a custom time-based MOTD shown to the user when they first log in. It greets them by their name, shows server info and time, date, weather and IP. &lt;a href="https://github.com/Lissy93/dotfiles/blob/master/utils/welcome-banner.sh" rel="noopener nofollow" target="_blank"&gt;Here's the source code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As an example, I'm using &lt;code class="prettyprint"&gt;cowsay&lt;/code&gt;, &lt;code class="prettyprint"&gt;figlet&lt;/code&gt;, &lt;code class="prettyprint"&gt;lolcat&lt;/code&gt; and &lt;code class="prettyprint"&gt;neofetch&lt;/code&gt; to create a custom time-based MOTD shown to the user when they first log in. It greets them by their name, shows server info and time, date, weather and IP. &lt;a href="https://github.com/cotonrey/dotfiles/blob/master/utils/welcome-banner.sh" rel="noopener nofollow" target="_blank"&gt;Here's the source code&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.ibb.co/cTg0jyn/Screenshot-from-2023-01-18-22-59-28.png" alt="welcome"&gt;&lt;/p&gt;
 
@@ -1510,13 +1510,13 @@ I've written a Bash helper function to make usage a bit easier, you can &lt;a hr
 
 &lt;h2&gt;Installations and Management&lt;/h2&gt;
 
-&lt;p&gt;Most of us have a core set of CLI apps and utils that we rely upon. Setting up a new machine, and individually installing each program would get tiresome very quickly. So the task of installing and updating your terminal apps is the perfect candidate for automation. &lt;a href="https://github.com/Lissy93/dotfiles/tree/master/scripts/installs" rel="noopener nofollow" target="_blank"&gt;Here&lt;/a&gt; are some example scripts I've written, which can be easily dropped into your dotfiles or just run independently to ensure you're never missing an app. &lt;/p&gt;
+&lt;p&gt;Most of us have a core set of CLI apps and utils that we rely upon. Setting up a new machine, and individually installing each program would get tiresome very quickly. So the task of installing and updating your terminal apps is the perfect candidate for automation. &lt;a href="https://github.com/cotonrey/dotfiles/tree/master/scripts/installs" rel="noopener nofollow" target="_blank"&gt;Here&lt;/a&gt; are some example scripts I've written, which can be easily dropped into your dotfiles or just run independently to ensure you're never missing an app. &lt;/p&gt;
 
-&lt;p&gt;For MacOS users, the easiest method is using &lt;a href="https://brew.sh/" rel="noopener nofollow" target="_blank"&gt;Homebrew&lt;/a&gt;. Just create a Brewfile (with &lt;code class="prettyprint"&gt;touch ~/.Brewfile&lt;/code&gt;), then list each of your apps, and run &lt;code class="prettyprint"&gt;brew bundle&lt;/code&gt;. You can keep your package list backed up, by putting it in a Git repo. Here's an example one, to get you started: &lt;a href="https://github.com/Lissy93/Brewfile" rel="noopener nofollow" target="_blank"&gt;https://github.com/Lissy93/Brewfile&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For MacOS users, the easiest method is using &lt;a href="https://brew.sh/" rel="noopener nofollow" target="_blank"&gt;Homebrew&lt;/a&gt;. Just create a Brewfile (with &lt;code class="prettyprint"&gt;touch ~/.Brewfile&lt;/code&gt;), then list each of your apps, and run &lt;code class="prettyprint"&gt;brew bundle&lt;/code&gt;. You can keep your package list backed up, by putting it in a Git repo. Here's an example one, to get you started: &lt;a href="https://github.com/cotonrey/Brewfile" rel="noopener nofollow" target="_blank"&gt;https://github.com/cotonrey/Brewfile&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;On Linux, you usually want to use the native package manager (e.g. &lt;code class="prettyprint"&gt;pacman&lt;/code&gt;, &lt;code class="prettyprint"&gt;apt&lt;/code&gt;). As an example, &lt;a href="https://github.com/Lissy93/dotfiles/blob/master/scripts/installs/arch-pacman.sh" rel="noopener nofollow" target="_blank"&gt;here's a script&lt;/a&gt; to install the above apps on Arch Linux systems&lt;/p&gt;
+&lt;p&gt;On Linux, you usually want to use the native package manager (e.g. &lt;code class="prettyprint"&gt;pacman&lt;/code&gt;, &lt;code class="prettyprint"&gt;apt&lt;/code&gt;). As an example, &lt;a href="https://github.com/cotonrey/dotfiles/blob/master/scripts/installs/arch-pacman.sh" rel="noopener nofollow" target="_blank"&gt;here's a script&lt;/a&gt; to install the above apps on Arch Linux systems&lt;/p&gt;
 
-&lt;p&gt;Desktop apps on Linux can be managed in a similar way, via Flatpak. Again, &lt;a href="https://github.com/Lissy93/dotfiles/blob/master/scripts/installs/flatpak.sh" rel="noopener nofollow" target="_blank"&gt;here's an example script&lt;/a&gt; :)&lt;/p&gt;
+&lt;p&gt;Desktop apps on Linux can be managed in a similar way, via Flatpak. Again, &lt;a href="https://github.com/cotonrey/dotfiles/blob/master/scripts/installs/flatpak.sh" rel="noopener nofollow" target="_blank"&gt;here's an example script&lt;/a&gt; :)&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -1557,7 +1557,7 @@ I've written a Bash helper function to make usage a bit easier, you can &lt;a hr
 &lt;table&gt;&lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;small&gt;If you like this kind of stuff&lt;/small&gt;,&lt;br&gt;&lt;small&gt;consider following for more :)&lt;/small&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a href="https://github.com/Lissy93"&gt;&lt;img src="https://img.shields.io/badge/-Lissy93-3a3a3a?style=flat&amp;amp;logo=GitHub&amp;amp;logoColor=white" alt="Follow Lissy93 on GitHub"&gt;&lt;/a&gt;&lt;a href="https://twitter.com/Lissy_Sykes"&gt;&lt;img src="https://img.shields.io/badge/-@Lissy_Sykes-00acee?style=flat&amp;amp;logo=Twitter&amp;amp;logoColor=white" alt="Follow Lissy_Sykes on Twitter"&gt;&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href="https://github.com/cotonrey"&gt;&lt;img src="https://img.shields.io/badge/-cotonrey-3a3a3a?style=flat&amp;amp;logo=GitHub&amp;amp;logoColor=white" alt="Follow cotonrey on GitHub"&gt;&lt;/a&gt;&lt;a href="https://twitter.com/Lissy_Sykes"&gt;&lt;img src="https://img.shields.io/badge/-@Lissy_Sykes-00acee?style=flat&amp;amp;logo=Twitter&amp;amp;logoColor=white" alt="Follow Lissy_Sykes on Twitter"&gt;&lt;/a&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;&lt;tbody&gt;
 &lt;/tbody&gt;&lt;/table&gt;
@@ -1973,7 +1973,7 @@ You'll then be able to checkout a specific tag, with &lt;code class="prettyprint
       <pubDate>Sat, 03 Dec 2022 17:25:01 +0000</pubDate>
       <link>https://notes.cotonrey.es/40638/super-useful-css-resources</link>
       <guid>https://notes.cotonrey.es/40638/super-useful-css-resources</guid>
-      <description>&lt;p&gt;&lt;p&gt;View on Dev.to: &lt;a href="https://dev.to/lissy93/super-useful-css-resources-1ba3"&gt;&lt;img width="250" style="display: inline; width: 250px; margin: 0;" src="https://img.shields.io/badge/Dev.to-Super_Useful_CSS_Resources_🌈-%23a300ff?logo=Dev.to&amp;amp;style=flat-square" alt="Super Useful CSS Resources 🌈"&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;p&gt;View on Dev.to: &lt;a href="https://dev.to/cotonrey/super-useful-css-resources-1ba3"&gt;&lt;img width="250" style="display: inline; width: 250px; margin: 0;" src="https://img.shields.io/badge/Dev.to-Super_Useful_CSS_Resources_🌈-%23a300ff?logo=Dev.to&amp;amp;style=flat-square" alt="Super Useful CSS Resources 🌈"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;A collection of 70 hand-picked, web-based tools which are actually useful.&lt;br&gt;
@@ -3578,7 +3578,7 @@ Maybe change the font, style, background color, add some shadows and some curves
 
 &lt;p&gt;&lt;img width="450" src="https://i.ibb.co/L6P26CL/console-styles-2.png" title="Example output of console styles" alt="Screenshot showing an example using CSS in the console"&gt;&lt;/p&gt;
 
-&lt;p&gt;Here's something similar I'm using in a developer dashboard, the code is &lt;a href="https://github.com/Lissy93/dashy/blob/master/src/utils/CoolConsole.js" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here's something similar I'm using in a developer dashboard, the code is &lt;a href="https://github.com/cotonrey/dashy/blob/master/src/utils/CoolConsole.js" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img width="450" src="https://i.ibb.co/7jgSC8p/console-styles-3.png" title="Example output of console styles" alt="Screenshot showing an example using CSS in the console"&gt;&lt;/p&gt;
 
@@ -3805,7 +3805,7 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 
 &lt;h3&gt;Insert Keyboard Keys&lt;/h3&gt;
 
-&lt;p&gt;Great for visually showing which keys to press, or drawing attention to something (&lt;a href="https://github.com/Lissy93/dashy/blob/master/docs/searching.md#navigating" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Great for visually showing which keys to press, or drawing attention to something (&lt;a href="https://github.com/cotonrey/dashy/blob/master/docs/searching.md#navigating" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight html"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;kbd&amp;gt;&lt;/span&gt;Key&lt;span class="nt"&gt;&amp;lt;/kbd&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src="https://i.ibb.co/HG82RJd/Screen-Shot-2023-02-24-at-12-53-43.png" width="400"&gt;&lt;/p&gt;
@@ -3823,7 +3823,7 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 
 &lt;h3&gt;Collapsible Sections&lt;/h3&gt;
 
-&lt;p&gt;Useful for including long blocks of text (like logs or API response), without clogging up your page (&lt;a href="https://github.com/Lissy93/Lissy93#readme" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Useful for including long blocks of text (like logs or API response), without clogging up your page (&lt;a href="https://github.com/cotonrey/cotonrey#readme" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight html"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;summary&amp;gt;&lt;/span&gt;Collapsable Title&lt;span class="nt"&gt;&amp;lt;/summary&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Put Content Here&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
@@ -3867,12 +3867,12 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 
 &lt;h3&gt;Centre an image or other content&lt;/h3&gt;
 
-&lt;p&gt;Make the title, sub-title and / or logo image centred (&lt;a href="https://github.com/Lissy93/dashy#readme" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Make the title, sub-title and / or logo image centred (&lt;a href="https://github.com/cotonrey/dashy#readme" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight html"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;align=&lt;/span&gt;&lt;span class="s"&gt;"center"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
   &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;"500"&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;"---"&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;"---"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://github.com/lissy93/dotfiles"&gt;&lt;img src="https://i.ibb.co/Vmp1DdZ/Screen-Shot-2023-02-24-at-14-51-59.png" width="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/cotonrey/dotfiles"&gt;&lt;img src="https://i.ibb.co/Vmp1DdZ/Screen-Shot-2023-02-24-at-14-51-59.png" width="600"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -3928,7 +3928,7 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 
 &lt;h3&gt;Side-Aligned Images&lt;/h3&gt;
 
-&lt;p&gt;In a similar way to centering images, you can also right align them, where the text will flow down the left-side. An example of this can be seen in the &lt;a href="https://github.com/Bugswriter/tuxi" rel="noopener nofollow" target="_blank"&gt;tuxi&lt;/a&gt; repo. (&lt;a href="https://github.com/Lissy93/Lissy93" rel="noopener nofollow" target="_blank"&gt;See example&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;In a similar way to centering images, you can also right align them, where the text will flow down the left-side. An example of this can be seen in the &lt;a href="https://github.com/Bugswriter/tuxi" rel="noopener nofollow" target="_blank"&gt;tuxi&lt;/a&gt; repo. (&lt;a href="https://github.com/cotonrey/cotonrey" rel="noopener nofollow" target="_blank"&gt;See example&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight plaintext"&gt;&lt;code&gt;&amp;lt;img src="https://i.ibb.co/sCwYpZ8/general.gif" alt="Video Preview Gif" align="right" width="500px"/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img width="600" src="https://i.ibb.co/8zvZCc8/Screen-Shot-2023-02-24-at-15-10-21.png"&gt;&lt;/p&gt;
@@ -3937,15 +3937,15 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 
 &lt;h3&gt;Moving Readme&lt;/h3&gt;
 
-&lt;p&gt;If it bothers you having your &lt;code class="prettyprint"&gt;README.md&lt;/code&gt; file cluttering up your projects root directory, then you can place it in &lt;code class="prettyprint"&gt;.github/README.md&lt;/code&gt; (along with any other GH stuff or assets). It will still be rendered as normal in your repositories home, but now you've got one less file in your project's base directory. (&lt;a href="https://github.com/Lissy93/go-apod" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;If it bothers you having your &lt;code class="prettyprint"&gt;README.md&lt;/code&gt; file cluttering up your projects root directory, then you can place it in &lt;code class="prettyprint"&gt;.github/README.md&lt;/code&gt; (along with any other GH stuff or assets). It will still be rendered as normal in your repositories home, but now you've got one less file in your project's base directory. (&lt;a href="https://github.com/cotonrey/go-apod" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
 
 &lt;hr&gt;
 
 &lt;h3&gt;Creating Home Page .md&lt;/h3&gt;
 
-&lt;p&gt;You can display a short markdown document at the top of your GitHub profile. To do so, just create a public repository with the same name as your GitHub username, and populate it with a non-empty &lt;code class="prettyprint"&gt;README.md&lt;/code&gt;. For more info, see the &lt;a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme" rel="noopener nofollow" target="_blank"&gt;Profile Readme Docs&lt;/a&gt;, or (&lt;a href="https://github.com/Lissy93" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;You can display a short markdown document at the top of your GitHub profile. To do so, just create a public repository with the same name as your GitHub username, and populate it with a non-empty &lt;code class="prettyprint"&gt;README.md&lt;/code&gt;. For more info, see the &lt;a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme" rel="noopener nofollow" target="_blank"&gt;Profile Readme Docs&lt;/a&gt;, or (&lt;a href="https://github.com/cotonrey" rel="noopener nofollow" target="_blank"&gt;see example&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://github.com/lissy93/lissy93"&gt;&lt;img src="https://i.ibb.co/BPtg0Pq/Screen-Shot-2023-02-24-at-13-58-27.png" width="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/cotonrey/cotonrey"&gt;&lt;img src="https://i.ibb.co/BPtg0Pq/Screen-Shot-2023-02-24-at-13-58-27.png" width="800"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -3960,7 +3960,7 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can also set the text align property here too, using &lt;code class="prettyprint"&gt;align="center"&lt;/code&gt; to centre text.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://github.com/Lissy93/Lissy93/blob/tech-stack-merged-cells/TECH-STACK.md"&gt;&lt;img src="https://i.ibb.co/y5cL10p/Screen-Shot-2023-02-24-at-14-40-28.png" width="600"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/cotonrey/cotonrey/blob/tech-stack-merged-cells/TECH-STACK.md"&gt;&lt;img src="https://i.ibb.co/y5cL10p/Screen-Shot-2023-02-24-at-14-40-28.png" width="600"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -3984,7 +3984,7 @@ ul li { margin-bottom: 0 !important; font-size: 1rem; }
 **[&amp;lt;kbd&amp;gt; &amp;lt;br&amp;gt; Configure &amp;lt;br&amp;gt; &amp;lt;/kbd&amp;gt;][Configure]** 
 **[&amp;lt;kbd&amp;gt; &amp;lt;br&amp;gt; Contribute &amp;lt;br&amp;gt; &amp;lt;/kbd&amp;gt;][Contribute]**
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href="https://github.com/lissy93/cyber-defence-presentation"&gt;&lt;img src="https://i.ibb.co/f9mbT3D/Screen-Shot-2023-02-24-at-14-47-01.png" width="800"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/cotonrey/cyber-defence-presentation"&gt;&lt;img src="https://i.ibb.co/f9mbT3D/Screen-Shot-2023-02-24-at-14-47-01.png" width="800"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -4037,7 +4037,7 @@ ul li strong, ul li code { margin-right: 1rem; }
 
 &lt;blockquote&gt;
 &lt;p&gt;Update: Since the markdown table isn't very clear, here's is a web version:&lt;br&gt;
-&lt;strong&gt;&lt;a href="https://lissy93.github.io/email-comparison/" rel="noopener nofollow" target="_blank"&gt;lissy93.github.io/email-comparison&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;&lt;a href="https://cotonrey.github.io/email-comparison/" rel="noopener nofollow" target="_blank"&gt;cotonrey.github.io/email-comparison&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;div class="table-wrapper"&gt;
@@ -4256,15 +4256,15 @@ ul li strong, ul li code { margin-right: 1rem; }
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;em&gt;To make changes to the above list, submit a pull request to &lt;a href="https://github.com/Lissy93/email-comparison" rel="noopener nofollow" target="_blank"&gt;github.com/Lissy93/email-comparison&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To make changes to the above list, submit a pull request to &lt;a href="https://github.com/cotonrey/email-comparison" rel="noopener nofollow" target="_blank"&gt;github.com/cotonrey/email-comparison&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
 &lt;h3&gt;See Also&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/Lissy93/personal-security-checklist#emails" rel="noopener nofollow" target="_blank"&gt;Email Security Tips&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/Lissy93/personal-security-checklist/blob/master/5_Privacy_Respecting_Software.md" rel="noopener nofollow" target="_blank"&gt;More Privacy Software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cotonrey/personal-security-checklist#emails" rel="noopener nofollow" target="_blank"&gt;Email Security Tips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cotonrey/personal-security-checklist/blob/master/5_Privacy_Respecting_Software.md" rel="noopener nofollow" target="_blank"&gt;More Privacy Software&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -4631,7 +4631,7 @@ You can also remove any dependencies that have an overlapping range, with &lt;co
 &lt;ul&gt;
 &lt;li&gt;Use any NPM CLI package, without having to first install it, using &lt;code class="prettyprint"&gt;npx&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;While developing multiple packages simultaneously, &lt;a href="https://classic.yarnpkg.com/en/docs/cli/link/" rel="noopener nofollow" target="_blank"&gt;yarn link&lt;/a&gt; is useful for creating symbolic links between them&lt;/li&gt;
-&lt;li&gt;Due to how NPM dependencies are structured, if you've been working on a lot of projects, you can find your disk space frequently running low. &lt;a href="https://npkill.js.org/" rel="noopener nofollow" target="_blank"&gt;NPKill&lt;/a&gt; is a handy CLI util, to find all node_modules directories for easy deletion of the ones you no longer need. Just run &lt;code class="prettyprint"&gt;npx npkill&lt;/code&gt;  to get started. You can also &lt;a href="https://listed.to/@lissy93/16988/how-to-remove-all-node_modules-folders" rel="noopener nofollow" target="_blank"&gt;do this nativley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Due to how NPM dependencies are structured, if you've been working on a lot of projects, you can find your disk space frequently running low. &lt;a href="https://npkill.js.org/" rel="noopener nofollow" target="_blank"&gt;NPKill&lt;/a&gt; is a handy CLI util, to find all node_modules directories for easy deletion of the ones you no longer need. Just run &lt;code class="prettyprint"&gt;npx npkill&lt;/code&gt;  to get started. You can also &lt;a href="https://listed.to/@cotonrey/16988/how-to-remove-all-node_modules-folders" rel="noopener nofollow" target="_blank"&gt;do this nativley&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;To open the GitHub page for any package, just run &lt;code class="prettyprint"&gt;npm docs [package-name]&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;If your facing any issues with NPM, then running &lt;code class="prettyprint"&gt;npm doctor&lt;/code&gt; with troubleshoot common issues, and output the likely fix&lt;/li&gt;
 &lt;li&gt;List all installed packages in a tree structure with &lt;code class="prettyprint"&gt;npm ls&lt;/code&gt;&lt;/li&gt;
@@ -4691,7 +4691,7 @@ You can also remove any dependencies that have an overlapping range, with &lt;co
 
 &lt;h3&gt;Source Code&lt;/h3&gt;
 
-&lt;p&gt;Source, on GitHub: &lt;a href="https://github.com/Lissy93/dashy" rel="noopener nofollow" target="_blank"&gt;github.com/Lissy93/dashy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Source, on GitHub: &lt;a href="https://github.com/cotonrey/dashy" rel="noopener nofollow" target="_blank"&gt;github.com/cotonrey/dashy&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;hr id="demo"&gt;&lt;p&gt;&lt;/p&gt;
 
@@ -4719,16 +4719,16 @@ You can also remove any dependencies that have an overlapping range, with &lt;co
 
 &lt;h4&gt;Setup&lt;/h4&gt;
 
-&lt;p&gt;Get the code: &lt;code class="prettyprint"&gt;git clone git@github.com:Lissy93/dashy.git&lt;/code&gt; and &lt;code class="prettyprint"&gt;cd dashy&lt;/code&gt;&lt;br&gt;
+&lt;p&gt;Get the code: &lt;code class="prettyprint"&gt;git clone git@github.com:cotonrey/dashy.git&lt;/code&gt; and &lt;code class="prettyprint"&gt;cd dashy&lt;/code&gt;&lt;br&gt;
 Then install the dependencies: &lt;code class="prettyprint"&gt;yarn&lt;/code&gt;&lt;/p&gt;
 
 &lt;h4&gt;Configuring&lt;/h4&gt;
 
-&lt;p&gt;All settings are specified in &lt;code class="prettyprint"&gt;./public/conf.yml&lt;/code&gt;. You can see a full list of options in the &lt;a href="https://github.com/Lissy93/dashy#configuring-" rel="noopener nofollow" target="_blank"&gt;docs&lt;/a&gt;, or modify one of &lt;a href="https://gist.github.com/Lissy93/000f712a5ce98f212817d20bc16bab10" rel="noopener nofollow" target="_blank"&gt;these example configs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;All settings are specified in &lt;code class="prettyprint"&gt;./public/conf.yml&lt;/code&gt;. You can see a full list of options in the &lt;a href="https://github.com/cotonrey/dashy#configuring-" rel="noopener nofollow" target="_blank"&gt;docs&lt;/a&gt;, or modify one of &lt;a href="https://gist.github.com/cotonrey/000f712a5ce98f212817d20bc16bab10" rel="noopener nofollow" target="_blank"&gt;these example configs&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4&gt;Deploying&lt;/h4&gt;
 
-&lt;p&gt;First build the project, with &lt;code class="prettyprint"&gt;yarn build&lt;/code&gt;, you can then run &lt;code class="prettyprint"&gt;yarn start&lt;/code&gt; to run it. Alternatively use Docker, with &lt;code class="prettyprint"&gt;docker run -it -p 8080:80 --rm --name my-dashboard lissy93/dashy&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;First build the project, with &lt;code class="prettyprint"&gt;yarn build&lt;/code&gt;, you can then run &lt;code class="prettyprint"&gt;yarn start&lt;/code&gt; to run it. Alternatively use Docker, with &lt;code class="prettyprint"&gt;docker run -it -p 8080:80 --rm --name my-dashboard cotonrey/dashy&lt;/code&gt;&lt;/p&gt;
 
 &lt;h4&gt;Developing&lt;/h4&gt;
 
@@ -4766,7 +4766,7 @@ Then install the dependencies: &lt;code class="prettyprint"&gt;yarn&lt;/code&gt;
 
 &lt;p&gt;&lt;img class="license" src="https://user-images.githubusercontent.com/1862727/68531648-69ef4200-030c-11ea-8d48-74af7a2d8304.png"&gt;&lt;/p&gt;
 
-&lt;p&gt;Licensed under &lt;a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17" rel="noopener nofollow" target="_blank"&gt;MIT X11&lt;/a&gt;, © Cesar Diaz 2021: &lt;a href="https://cotonrey.es" rel="noopener nofollow" target="_blank"&gt;https://cotonrey.es&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Licensed under &lt;a href="https://gist.github.com/cotonrey/143d2ee01ccc5c052a17" rel="noopener nofollow" target="_blank"&gt;MIT X11&lt;/a&gt;, © Cesar Diaz 2021: &lt;a href="https://cotonrey.es" rel="noopener nofollow" target="_blank"&gt;https://cotonrey.es&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
 
@@ -4811,7 +4811,7 @@ Then install the dependencies: &lt;code class="prettyprint"&gt;yarn&lt;/code&gt;
 &lt;p&gt;&lt;strong&gt;Espanso Links&lt;/strong&gt;: &lt;a href="https://espanso.org/docs/" rel="noopener nofollow" target="_blank"&gt;Docs&lt;/a&gt;, &lt;a href="https://www.reddit.com/r/espanso/" rel="noopener nofollow" target="_blank"&gt;Reddit&lt;/a&gt;, &lt;a href="https://hub.espanso.org/" rel="noopener nofollow" target="_blank"&gt;Package Hub&lt;/a&gt;, &lt;a href="https://github.com/federico-terzi/espanso" rel="noopener nofollow" target="_blank"&gt;Source Code&lt;/a&gt;, &lt;a href="https://espanso.org/install/" rel="noopener nofollow" target="_blank"&gt;Quick Start&lt;/a&gt;, &lt;a href="https://federicoterzi.com/" rel="noopener nofollow" target="_blank"&gt;Author's Site&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;I'm still working on my config, but for reference here it is: &lt;a href="https://github.com/Lissy93/espanso-config" rel="noopener nofollow" target="_blank"&gt;github.com/Lissy93/espanso-config&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I'm still working on my config, but for reference here it is: &lt;a href="https://github.com/cotonrey/espanso-config" rel="noopener nofollow" target="_blank"&gt;github.com/cotonrey/espanso-config&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr&gt;
@@ -4887,7 +4887,7 @@ Then install the dependencies: &lt;code class="prettyprint"&gt;yarn&lt;/code&gt;
   &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;output&lt;/span&gt;
     &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;shell&lt;/span&gt;
     &lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
-      &lt;span class="na"&gt;cmd&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;curl&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;'https://gist.githubusercontent.com/Lissy93/143d2ee01ccc5c052a17/raw/a8ac96cd15847a231931b561d95d2de47066fd33/LICENSE.MD'"&lt;/span&gt;
+      &lt;span class="na"&gt;cmd&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;curl&lt;/span&gt;&lt;span class="nv"&gt; &lt;/span&gt;&lt;span class="s"&gt;'https://gist.githubusercontent.com/cotonrey/143d2ee01ccc5c052a17/raw/a8ac96cd15847a231931b561d95d2de47066fd33/LICENSE.MD'"&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
 
@@ -5619,30 +5619,30 @@ E.g. &lt;code class="prettyprint"&gt;export CHROME_EXECUTABLE=/usr/bin/brave&lt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/7TvtqtSBZg" rel="noopener nofollow" target="_blank"&gt;How to setup an SSH Tarpint with EndleShh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/18842/how-to-mullvad-vpn-using-wireguard-on-opnsense" rel="noopener nofollow" target="_blank"&gt;How to setup WireGuard on OPNSense for Mullvad VPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/18842/how-to-mullvad-vpn-using-wireguard-on-opnsense" rel="noopener nofollow" target="_blank"&gt;How to setup WireGuard on OPNSense for Mullvad VPN&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/qTquNEXaSf"&gt;How to setup SSL for OPNSense, with Let's Encrypt&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/J1K8TSTwWA"&gt;How to transfer a file to server, via SSH/SCP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/15742/how-to-use-ssh-for-server-authentication" rel="noopener nofollow" target="_blank"&gt;How to use SSH key Pairs for Authentication&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/22798/my-server-setup" rel="noopener nofollow" target="_blank"&gt;How to setup and secure a new Debian-based server&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/16801/how-to-compile-install-software-on-arch" rel="noopener nofollow" target="_blank"&gt;How to compile and install software on Arch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/15742/how-to-use-ssh-for-server-authentication" rel="noopener nofollow" target="_blank"&gt;How to use SSH key Pairs for Authentication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/22798/my-server-setup" rel="noopener nofollow" target="_blank"&gt;How to setup and secure a new Debian-based server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/16801/how-to-compile-install-software-on-arch" rel="noopener nofollow" target="_blank"&gt;How to compile and install software on Arch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/frKPhkrWVq" rel="noopener nofollow" target="_blank"&gt;How to Install Docker on Ubuntu 20.04&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/xyAgKFe7JL" rel="noopener nofollow" target="_blank"&gt;How to Install GoLang on Ubuntu 20.04&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/EzrYRxGLNB"&gt;How to Recover Broken OPNSense System&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/19109/pi-zero-tor-routed-access-point" rel="noopener nofollow" target="_blank"&gt;How to create a Tor-routed wireless access point, on a Pi Zero W&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/19109/pi-zero-tor-routed-access-point" rel="noopener nofollow" target="_blank"&gt;How to create a Tor-routed wireless access point, on a Pi Zero W&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;General&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/QjfD4UFXUS"&gt;How to start a web server in one-line&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/23054/pimping-up-your-duckduckgo-search-results#usage" rel="noopener nofollow" target="_blank"&gt;How to create and apply styles to DuckDuckGo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/23054/pimping-up-your-duckduckgo-search-results#usage" rel="noopener nofollow" target="_blank"&gt;How to create and apply styles to DuckDuckGo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/bPH2yHhC3f" rel="noopener nofollow" target="_blank"&gt;How to count number of lines of Code with Cloc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/14972/how-to-operate-the-sharkjack" rel="noopener nofollow" target="_blank"&gt;How to operate the Shark Jack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/14972/how-to-operate-the-sharkjack" rel="noopener nofollow" target="_blank"&gt;How to operate the Shark Jack&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/ZOg4pw3J8k" rel="noopener nofollow" target="_blank"&gt;How to reload Prometheus's Config&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/13402/how-to-enable-disable-pi-hole-from-cli" rel="noopener nofollow" target="_blank"&gt;How to enable/ disable Pi-Hole from the terminal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/13402/how-to-enable-disable-pi-hole-from-cli" rel="noopener nofollow" target="_blank"&gt;How to enable/ disable Pi-Hole from the terminal&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/nWcfB31ZTD" rel="noopener nofollow" target="_blank"&gt;How to Setup English Auto-Correct&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/x9Sjv06o9i" rel="noopener nofollow" target="_blank"&gt;How to improve arrow-key keyboard navigation, using AHK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/18756/custom-styling-for-listed-blog" rel="noopener nofollow" target="_blank"&gt;How to use a grid layout for Listed.to Blogs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/18756/custom-styling-for-listed-blog" rel="noopener nofollow" target="_blank"&gt;How to use a grid layout for Listed.to Blogs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/RUi22QSyWe"&gt;How to expose a port to the internet using Ngrok&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/yMqhzEVGAq"&gt;How to use your own domain for your Netlify apps&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -5655,8 +5655,8 @@ E.g. &lt;code class="prettyprint"&gt;export CHROME_EXECUTABLE=/usr/bin/brave&lt;
 &lt;li&gt;&lt;a href="https://listed.to/p/bSvDC86ebq" rel="noopener nofollow" target="_blank"&gt;JS: How to animate browser/ tab title&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/2reTxF1s84" rel="noopener nofollow" target="_blank"&gt;Vue: How to respond to scroll position&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/r3T4Sbk1QG" rel="noopener nofollow" target="_blank"&gt;CSS: Pure-CSS Footer Wave Animation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/20679/reference-using-variable-fonts-in-css" rel="noopener nofollow" target="_blank"&gt;CSS: How to use variable font axes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/16818/keep-mouse-movin-sh" rel="noopener nofollow" target="_blank"&gt;Shell: How to periodically move mouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/20679/reference-using-variable-fonts-in-css" rel="noopener nofollow" target="_blank"&gt;CSS: How to use variable font axes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/16818/keep-mouse-movin-sh" rel="noopener nofollow" target="_blank"&gt;Shell: How to periodically move mouse&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;Code Management&lt;/h3&gt;
@@ -5664,9 +5664,9 @@ E.g. &lt;code class="prettyprint"&gt;export CHROME_EXECUTABLE=/usr/bin/brave&lt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/hqeCTdPZHj"&gt;How to GPG sign git commits&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://listed.to/p/HNyekxkuTC" rel="noopener nofollow" target="_blank"&gt;How to Mirror a Git Repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/17996/quick-tip-git-submodules" rel="noopener nofollow" target="_blank"&gt;How to use Git Submodules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/17996/quick-tip-git-submodules" rel="noopener nofollow" target="_blank"&gt;How to use Git Submodules&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://notes.cotonrey.es/p/kqwVofIXQu"&gt;How to maintain NPM dependencies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://listed.to/@lissy93/16988/how-to-remove-all-node_modules-folders" rel="noopener nofollow" target="_blank"&gt;How to easily remove all node_modules directories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://listed.to/@cotonrey/16988/how-to-remove-all-node_modules-folders" rel="noopener nofollow" target="_blank"&gt;How to easily remove all node_modules directories&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;See Also&lt;/h3&gt;
@@ -6174,7 +6174,7 @@ BindFamily 0
 
 &lt;ul&gt;
 &lt;li&gt;If not already done, set ZSH as default shell: &lt;code class="prettyprint"&gt;chsh -s /usr/bin/zsh&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class="prettyprint"&gt;git clone https://github.com/Lissy93/dotfiles.git --recursive&lt;/code&gt; - Download my dotfiles&lt;/li&gt;
+&lt;li&gt;&lt;code class="prettyprint"&gt;git clone https://github.com/cotonrey/dotfiles.git --recursive&lt;/code&gt; - Download my dotfiles&lt;/li&gt;
 &lt;li&gt;&lt;code class="prettyprint"&gt;cd ./dotfiles&lt;/code&gt; - Navigate to directory&lt;/li&gt;
 &lt;li&gt;&lt;code class="prettyprint"&gt;./install.sh&lt;/code&gt; - Run the install script&lt;/li&gt;
 &lt;/ul&gt;
@@ -6665,7 +6665,7 @@ If you're just looking for a generic word list, see &lt;a href="https://listed.t
 
 &lt;iframe id="convertor" title="UI" src="https://ahk-to-espanso.as93.net/" style="border:none;width:100%;height:800px;"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Source code for &lt;a href="https://repl.it/@Lissy93/Word-List-Convertor#index.js" rel="noopener nofollow" target="_blank"&gt;Converter Script&lt;/a&gt; on Repl.it&lt;/p&gt;
+&lt;p&gt;Source code for &lt;a href="https://repl.it/@cotonrey/Word-List-Convertor#index.js" rel="noopener nofollow" target="_blank"&gt;Converter Script&lt;/a&gt; on Repl.it&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;hr id="usage"&gt;&lt;p&gt;&lt;/p&gt;
 
@@ -6696,7 +6696,7 @@ If you're just looking for a generic word list, see &lt;a href="https://listed.t
 
 &lt;h3&gt;Raspberry Pi Projects&lt;/h3&gt;
 
-&lt;p&gt;Here is a curated list of projects that I have used, enjoyed and would recommend for anyone looking to put their Pi to use. For links to each projects GitHub repo, see: &lt;a href="https://github.com/stars/Lissy93/lists/raspberry-pi" rel="noopener nofollow" target="_blank"&gt;https://github.com/stars/Lissy93/lists/raspberry-pi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is a curated list of projects that I have used, enjoyed and would recommend for anyone looking to put their Pi to use. For links to each projects GitHub repo, see: &lt;a href="https://github.com/stars/cotonrey/lists/raspberry-pi" rel="noopener nofollow" target="_blank"&gt;https://github.com/stars/cotonrey/lists/raspberry-pi&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;There's nothing too complicated here, so this should also provide a good starting point for beginners. Everything here is fully open source and backed by strong communities with large user bases. &lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
@@ -8748,7 +8748,7 @@ Island, ProtonMail, Signal, GitHub, Geometric Weather, Plex, Developer Assistant
 
 &lt;p&gt;Note that to clone a repository along with it's sub modules, you must use the &lt;code class="prettyprint"&gt;--recursive&lt;/code&gt; option. Similarly, to update the code within the submodules, you will need to run &lt;code class="prettyprint"&gt;git submodule update --init --recursive&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;For example, here (in my &lt;a href="https://github.com/Lissy93/dotfiles/blob/master/.gitmodules" rel="noopener nofollow" target="_blank"&gt;.gitmodules&lt;/a&gt;) I am adding the dotbot repo into the root of my dotfiles project:&lt;/p&gt;
+&lt;p&gt;For example, here (in my &lt;a href="https://github.com/cotonrey/dotfiles/blob/master/.gitmodules" rel="noopener nofollow" target="_blank"&gt;.gitmodules&lt;/a&gt;) I am adding the dotbot repo into the root of my dotfiles project:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight plaintext"&gt;&lt;code&gt;[submodule ".dotbot"]
     path = .dotbot
     url = https://github.com/anishathalye/dotbot
@@ -8873,7 +8873,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
 
 &lt;p&gt;Thanks for reading :)&lt;/p&gt;
 
-&lt;p&gt;Recently I have been working on writing up a &lt;a href="https://github.com/Lissy93/personal-security-checklist/blob/master/README.md" rel="noopener nofollow" target="_blank"&gt;checklist of privacy and security tips&lt;/a&gt;, as well as a &lt;a href="https://github.com/Lissy93/personal-security-checklist/blob/master/5_Privacy_Respecting_Software.md" rel="noopener nofollow" target="_blank"&gt;list of privacy-respecting software&lt;/a&gt;. Both are hosted on GitHub, so that anyone can contribute to it: &lt;a href="https://github.com/Lissy93/personal-security-checklist" rel="noopener nofollow" target="_blank"&gt;https://github.com/Lissy93/personal-security-checklist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recently I have been working on writing up a &lt;a href="https://github.com/cotonrey/personal-security-checklist/blob/master/README.md" rel="noopener nofollow" target="_blank"&gt;checklist of privacy and security tips&lt;/a&gt;, as well as a &lt;a href="https://github.com/cotonrey/personal-security-checklist/blob/master/5_Privacy_Respecting_Software.md" rel="noopener nofollow" target="_blank"&gt;list of privacy-respecting software&lt;/a&gt;. Both are hosted on GitHub, so that anyone can contribute to it: &lt;a href="https://github.com/cotonrey/personal-security-checklist" rel="noopener nofollow" target="_blank"&gt;https://github.com/cotonrey/personal-security-checklist&lt;/a&gt;&lt;/p&gt;
 &lt;/p&gt;</description>
     </item>
     <item>
@@ -9031,7 +9031,7 @@ GitHub Modules: &lt;a href="https://github.blog/2016-02-01-working-with-submodul
       <guid>https://notes.cotonrey.es/16769/key-mirror-ts</guid>
       <description>&lt;p&gt;&lt;p&gt;&lt;strong&gt;A quick function to construct an enumeration which has keys the same as their value&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This used to be part of React, but since it's now been removed (See commit: &lt;a href="https://git.io/fjdWw" rel="noopener nofollow" target="_blank"&gt;#56f5115&lt;/a&gt;), and some older packages throw an error without it, I've updated it, and uploading in case anyone else needs it while working with older React packages. A copy of React's original, JavaScript version can be found &lt;a href="https://gist.github.com/Lissy93/acf635701bf5812431ec07d67d798095#file-react-key-mirror-js" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This used to be part of React, but since it's now been removed (See commit: &lt;a href="https://git.io/fjdWw" rel="noopener nofollow" target="_blank"&gt;#56f5115&lt;/a&gt;), and some older packages throw an error without it, I've updated it, and uploading in case anyone else needs it while working with older React packages. A copy of React's original, JavaScript version can be found &lt;a href="https://gist.github.com/cotonrey/acf635701bf5812431ec07d67d798095#file-react-key-mirror-js" rel="noopener nofollow" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre class="highlight typescript"&gt;&lt;code&gt;&lt;span class="cm"&gt;/**
  * (C) Cesar Diaz &amp;lt;https://cotonrey.es&amp;gt;
  * Licensed under MIT X11: https://git.io/Jew4i
