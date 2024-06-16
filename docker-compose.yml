@@ -1,0 +1,87 @@
+---
+# Welcome to Devolio! Your personal developer portfolio website
+# To get started, just run `docker compose up -d`
+# You can configure your container here, by modifying this file
+version: '3.8'
+services:
+  traefik:
+    # The official latest Traefik docker image
+    image: traefik:latest
+    networks:
+      - frontend
+    # Enables the web UI and tells Traefik to listen to docker
+    ports:
+      - 3000:3000
+      - 8080:8080
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.yml:/etc/traefik/traefik.yml
+
+  redis-instance:
+    image: redis:latest
+    command: ["redis-server"]
+    networks:
+      - frontend
+    depends_on:
+      - traefik
+    ports:
+      - 6379:6379
+    expose:
+      - 6379
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    restart: always
+
+  devolio:
+    container_name: Devolio
+
+    # Pull latest image from DockerHub
+    # image: lissy93/devolio
+
+    # To build from source, replace 'image: lissy93/devolio' with 'build: .'
+    build: .
+
+    # Set port that web service will be served on. Keep container port as 80
+    ports:
+      - 80:80
+
+    expose:
+      - 80
+    
+    # Set any environmental variables
+    environment:
+      - NODE_ENV=development
+      # Specify any environment variables you'd like to use within the app
+      # - TWITTER_TOKEN='' # (Optional) If you want to use the Twitter widget
+      # - GITHUB_TOKEN='' # (Optional) If you want to use the GitHub widget
+      # Specify your user ID and group ID. You can find this by running `id -u` and `id -g`
+      - UID=503
+      - GID=20
+
+    # Specify restart policy
+    restart: unless-stopped
+
+    # Configure healthchecks
+    healthcheck:
+      test: ['CMD', 'node', '/app/health-check']
+      retries: 3
+      interval: 5m
+      timeout: 10s
+      start_period: 30s
+    
+    networks:
+      - frontend
+
+    labels:
+      - traefik.http.routers.service.rule=Host(`localhost`)
+
+    depends_on:
+      - traefik
+      - redis-instance
+
+networks:
+  frontend:
+
+volumes:
+  redis:
